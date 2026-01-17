@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>7 Wonders of the World</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>7 Wonders</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#wonders">Wonders</a></li>
+    <li><a href="#facts">Facts</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header id="home">
+  <div>
+    <h1>7 Wonders of the World</h1>
+    <p>
+      A journey through the most breathtaking architectural and cultural
+      masterpieces ever created by human civilization.
+    </p>
+    <div class="hero-btns">
+      <a href="#wonders" class="btn-primary">Explore Wonders</a>
+      <a href="#facts" class="btn-outline">Quick Facts</a>
+    </div>
+  </div>
+</header>
+
+<!-- WONDERS -->
+<section id="wonders">
+  <h2>The Seven Wonders</h2>
+
+  <div class="grid">
+    <div class="card" onclick="openModal('Great Wall of China')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/GreatWallBadaling.jpg">
+      <div class="card-content">
+        <h3>Great Wall of China</h3>
+        <p>The longest man-made structure, built to protect ancient China.</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('Petra')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Petra_Jordan_BW_21.JPG">
+      <div class="card-content">
+        <h3>Petra</h3>
+        <p>An ancient city carved directly into rose-colored rock.</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('Christ the Redeemer')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Christ_the_Redeemer_-_Rio.jpg">
+      <div class="card-content">
+        <h3>Christ the Redeemer</h3>
+        <p>A symbol of peace towering above Rio de Janeiro.</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('Machu Picchu')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Machu_Picchu%2C_Peru.jpg">
+      <div class="card-content">
+        <h3>Machu Picchu</h3>
+        <p>A mystical Incan citadel hidden in the Andes Mountains.</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('Chichén Itzá')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Chichen-Itza-Castillo-Seen-From-East.JPG">
+      <div class="card-content">
+        <h3>Chichén Itzá</h3>
+        <p>A Mayan pyramid aligned with celestial events.</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('Colosseum')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Colosseo_2020.jpg">
+      <div class="card-content">
+        <h3>Colosseum</h3>
+        <p>The grand amphitheater of ancient Rome.</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="openModal('Taj Mahal')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg">
+      <div class="card-content">
+        <h3>Taj Mahal</h3>
+        <p>A white marble monument built as a symbol of love.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FACTS -->
+<section id="facts">
+  <h2>Quick Facts</h2>
+  <div class="facts">
+    <div class="fact">
+      <h3>2007</h3>
+      <p>Year when the 7 Wonders were announced</p>
+    </div>
+    <div class="fact">
+      <h3>7</h3>
+      <p>Monuments from different civilizations</p>
+    </div>
+    <div class="fact">
+      <h3>Millions</h3>
+      <p>Visitors every year worldwide</p>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <h3 id="modalTitle"></h3>
+    <p>
+      This wonder represents extraordinary human creativity,
+      engineering excellence, and cultural significance.
+    </p>
+    <button class="close-btn" onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<footer>
+  © 2026 | 7 Wonders of the World Project
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
