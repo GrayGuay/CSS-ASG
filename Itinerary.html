@@ -4,8 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itinerary</title>
+    <link rel="stylesheet" href="css/itinerary.css">
 </head>
 <body class="body-itinerary">
+    <!-- Pages Navbar -->
+  <div id="navbar-pages-placeholder"></div>
+
+    <header class="header-itinerary">
+    <h1>7 Wonders Of The World Trip Planner</h1>
+    <p>Create your perfect itinerary in 4 simple steps</p>
+  </header>
+
+    <div id="step-1" class="step-container">
+  <div class="card">
+    <h2>Trip Duration</h2>
+    <p>How many days will you spend there?</p>
+    <label>
+      Number of Days *
+      <input type="number" id="days" min="1" max="60" value="1">
+    </label>
+    <small>Minimum: 1 day, Maximum: 60 days</small>
+  </div>
+  <button class="next-btn" onclick="goToStep(2)">➜</button>
+</div>
+
+<div id="step-2" class="step-container hidden">
+  <div class="card">
+    <h2>Total Budget</h2>
+    <p>What is your total budget for your trip?</p>
+    <label>
+      Total Trip Budget
+      <input type="number" id="total-budget" value="50">
+    </label>
     
+    <div class="result-box">
+        <!--add something here based on how much budget they have-->
+    </div>
+</div>
+
+<div id="step-3" class="step-container hidden">
+  <div class="card">
+    <h2>Travel Interests</h2>
+    <p>What would you want to see in your trip?</p>
+
+    <div class="interests-grid">
+      <label class="interest-item">
+        <span>Animals / Zoo / Wildlife</span>
+        <input type="checkbox" name="interest" value="wildlife">
+        <span class="custom-checkbox"></span>
+      </label>
+
+      <label class="interest-item">
+        <span>Museums & Art Galleries</span>
+        <input type="checkbox" name="interest" value="museums">
+        <span class="custom-checkbox"></span>
+      </label>
+
+      <label class="interest-item">
+        <span>Nature & Parks</span>
+        <input type="checkbox" name="interest" value="nature">
+        <span class="custom-checkbox"></span>
+      </label>
+
+      <label class="interest-item">
+        <span>Beaches</span>
+        <input type="checkbox" name="interest" value="beaches">
+        <span class="custom-checkbox"></span>
+      </label>
+    </div>
+  </div>
+</div>
+
+<div id="step-4" class="step-container hidden">
+  <div class="card">
+    <h2>Accommodation</h2>
+    <p>Select your hotel or use current location for optimized itinerary planning</p>
+
+    <div class="location-card">
+      <div class="location-info">
+        <span class="location-icon">🧭</span>
+        <div>
+          <strong>Use Current Location</strong>
+          <p>Start planning from where you are right now</p>
+        </div>
+      </div>
+      <button class="location-btn">📍 Use My Location</button>
+    </div>
+
+    <div class="separator">
+      <span>OR Select a Hotel</span>
+    </div>
+
+    <div class="search-wrapper">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="Search hotels by name, category, region...">
+    </div>
+  </div>
+</div>
+
+  <div class="btn-group">
+    <button class="prev-btn" onclick="goToStep(2)">⬅</button>
+    <button class="next-btn" onclick="goToStep(4)">➜</button>
+  </div>
+
+
+    <!-- footer -->
+  <footer class="footer-itinerary">
+    <p>&copy; 2026 Wonders of the World Project</p>
+  </footer>
+  <script src="js/navbar.js"></script>
+  <script src="js/itinerary.js"></script>
+  
 </body>
 </html>
