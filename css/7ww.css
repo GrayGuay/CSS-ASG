@@ -49,6 +49,29 @@
     );
 }
 
+.body-machupicchu {
+    background: linear-gradient(
+        to bottom,
+        #e7f0ea,
+        #c6d8cf);
+}
+
+.body-petra {
+    background: linear-gradient(
+        to bottom,
+        #f3e6db,
+        #e0bfa8
+    );
+}
+
+.body-tajmahal {
+    background: linear-gradient(
+        to bottom,
+        #f9f9f9,
+        #d0e6f0
+    );
+}
+
 /* ================================
    HEADINGS
 ================================ */
@@ -99,6 +122,24 @@ header {
     background-position: center top;
 }
 
+.header-machupicchu {
+    background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../images/machu/Machu_Picchu\,_2023_\(012\).jpg");
+}
+
+.header-petra {
+    background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../images/petra/Petra\ Header.jpg");
+}
+
+.header-tajmahal {
+    background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../images/taj/taj\ header.webp");
+}
+
 header h1 {
     font-size: 4rem;
 }
@@ -128,7 +169,7 @@ header p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 8px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -137,8 +178,9 @@ header p {
 .nav-links a {
     color: white;
     text-decoration: none;
+    font-size: 0.9rem;
     font-weight: 600;
-    padding: 10px 18px;
+    padding: 6px 12px;
     border-radius: 25px;
     transition: 0.3s;
     white-space: nowrap;
@@ -148,8 +190,6 @@ header p {
     background: var(--accent);
     color: black;
 }
-
-
 
 /* ================================
    SECTIONS
@@ -342,6 +382,21 @@ footer {
 .footer-christ {
     color: white;
     background: #1e1e1e;
+}
+
+.footer-machupicchu {
+    color: #f2efe9;
+    background-color: #7f9f90;
+}
+
+.footer-petra {
+    color: #f2efe9;
+    background-color: #9c5a3c;
+}
+
+.footer-tajmahal {
+    color: #f2efe9;
+    background-color: #a3c4d9;
 }
 
 /* ================================

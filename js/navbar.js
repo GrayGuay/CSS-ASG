@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Great Wall of China", url: "greatwallofchina.html" },
         { name: "Machu Picchu", url: "machu-picchu.html" },
         { name: "Petra", url: "petra.html" },
-        { name: "Taj Mahal", url: "tahj.html" }
+        { name: "Taj Mahal", url: "taj.html" },
+        { name: "Itinerary", url: "itinerary.html" },
+        { name: "Booking", url: "booking.html" }
     ];
 
     const navbarPagesContainer = document.getElementById("navbar-pages-placeholder");

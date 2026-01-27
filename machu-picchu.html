@@ -4,65 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Machu Picchu</title>
+    <link rel="stylesheet" href="css/7ww.css">
 </head>
-<body>
-    <nav>
-        <a href="/Homepage/index.html">Homepage</a>
-        <a href="/colosseum.html">Colosseum</a>
-        <a href="/petra.html">Petra</a>
-        <a href="/greatwallofchina.html">Great Wall of China</a>
-        <a href="/tahj.html">Taj Mahal</a>
-        <a href="/christ.html">Christ the Redeemer</a>
-        <a href="/chichen.html">Chichén Itzá</a>
-    </nav>
+<body class="body-machupicchu">
+  <!-- Pages Navbar -->
+  <div id="navbar-pages-placeholder"></div>
 
-    <!-- Navbar -->
-    <nav>
-        <a href="#overview">Overview</a>
-        <a href="#exploring">Exploring</a>
-        <a href="#location">Location</a>
-        <a href="#history">History</a>
-    </nav>
-
-    <!-- Title -->
+  <header class="header-machupicchu">
     <h1>Machu Picchu</h1>
+    <p>The Lost City of the Incas</p>
+  </header>
 
-    <!-- Scrollable Images -->
-    <div class="image-scroll">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Machu_Picchu%2C_Peru.jpg" alt="Machu Picchu exterior view">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Machu_Picchu_2017.jpg" alt="Machu Picchu terraces">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Machu_Picchu_Aerial_View.jpg" alt="Aerial view of Machu Picchu">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Machu_Picchu_-_Peru_-_panoramio.jpg" alt="Stone structures of Machu Picchu">
+  <!-- Sections Navbar -->
+  <nav class="navbar">
+  <div class="nav-container">
+      <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#culture">Culture</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#facts">Facts</a></li>
+          <li><a href="#feedback">Reviews</a></li>
+      </ul>
+  </div>
+  </nav>
+
+  <!-- Description / Overview -->
+  <section id="about">
+    <article>
+      <h2>About Machu Picchu</h2>
+      <p>
+        Machu Picchu is an ancient Incan citadel located high in the Andes Mountains of Peru, overlooking the Urubamba River valley. Built in the 15th century, it is renowned for its sophisticated dry-stone construction, terraced fields, and panoramic mountain views.  
+        It is a UNESCO World Heritage Site and is often referred to as the "Lost City of the Incas".
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Machu_Picchu" target="_blank">
+        Learn more on Wikipedia
+      </a>
+    </article>
+  </section>
+
+  <!-- Scrollable Images -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="slider-container">
+      <button class="prev">&#10094;</button>
+      <div class="slider-images">
+        <img src="images/machu/7e6077e1-city-45618-165ce416a23.jpg" class="active" alt="Machu Picchu exterior view with alpaca">
+        <img src="images/machu/machu picchu.webp" alt="Machu Picchu Walking path">
+        <img src="images/machu/machu-picchu-town-peru.webp" alt="Machu Picchu over mountains">
+      </div>
+      <button class="next">&#10095;</button>
     </div>
+  </section>
 
-    <!-- Exploring the Place -->
-    <h2 id="exploring">Exploring the Place</h2>
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/1F1JkQvZQnM" title="Machu Picchu Exploration Video" allowfullscreen></iframe>
-    </div>
+  <!-- History -->
+  <section id="history">
+  <h2>History</h2>
+  <div class="section-text">
+    <p>        
+      Machu Picchu was built around 1450 during the height of the Inca Empire, likely as a royal estate or religious site. It was abandoned a century later during the Spanish conquest, though the citadel was never discovered by Spanish conquistadors.  
+      The site remained largely unknown to the outside world until American historian Hiram Bingham brought it international attention in 1911.  
+      Today, Machu Picchu is one of the most visited archaeological sites in the world and a symbol of Incan ingenuity.  
+      Read more about <a href="https://en.wikipedia.org/wiki/Inca_Empire" target="_blank">the Inca Empire</a>.
+    </p>
+  </div>
+  </section>
 
-    <!-- Location -->
-    <h2 id="location">Location of the Place</h2>
-    <div class="map-container">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.565743568055!2d-72.54496338460503!3d-13.16314119071538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dadc65fdb8e9f%3A0x2f4f651f8aebc497!2sMachu%20Picchu!5e0!3m2!1sen!2s!4v1698800000000!5m2!1sen!2s" 
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-    </div>
+  <!-- TimeLine -->
+  <section>
+    <h2>Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+            <span class="year">c. 1450 – Construction Begins</span>
+            <p>Machu Picchu was constructed during the reign of Emperor Pachacuti at the height of the Inca Empire.</p>
+        </div>
 
-    <!-- Description / Overview -->
-    <h2 id="overview">Overview</h2>
-    <div class="section-text">
-        <p>
-            Machu Picchu is an ancient Incan citadel located high in the Andes Mountains of Peru, overlooking the Urubamba River valley. Built in the 15th century, it is renowned for its sophisticated dry-stone construction, terraced fields, and panoramic mountain views.  
-            It is a UNESCO World Heritage Site and is often referred to as the "Lost City of the Incas." Learn more on <a href="https://en.wikipedia.org/wiki/Machu_Picchu" target="_blank">Wikipedia</a>.
-        </p>
-    </div>
+        <div class="timeline-item">
+            <span class="year">15th Century – Active Use</span>
+            <p>The citadel served as a royal retreat and religious site for the Incas.</p>
+        </div>
 
-        <!-- Cultural Section -->
-     <h2>Cultural and Religious Significance</h2>
-<div class="section-text">
-  <p>
+        <div class="timeline-item">
+            <span class="year">c. 1530 – Abandonment</span>
+            <p>The site was abandoned during the Spanish conquest, though it was never discovered by the Spanish.</p>
+        </div>
+
+        <div class="timeline-item">
+            <span class="year">1911 – Rediscovery</span>
+            <p>Machu Picchu gained global attention after being introduced to the world by Hiram Bingham.</p>
+        </div>
+
+        <div class="timeline-item">
+            <span class="year">Modern Era – Preservation</span>
+            <p>Conservation efforts protect the site from environmental damage and over-tourism.</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- Culture -->
+  <section id="culture">
+  <h2>Culture</h2>
+  <div class="section-text">
+    <p>
     Machu Picchu held deep cultural and spiritual importance for the Inca
     civilization. It is believed to have been a royal estate for Emperor
     Pachacuti and a sacred ceremonial center.
@@ -73,91 +118,82 @@
     cosmos. Mountains surrounding Machu Picchu were considered sacred spirits
     known as <em>Apus</em>.
   </p>
-</div>
+  </div>
+  </section>
 
-    <!-- History -->
-    <h2 id="history">History</h2>
-    <div class="section-text">
-        <p>
-            Machu Picchu was built around 1450 during the height of the Inca Empire, likely as a royal estate or religious site. It was abandoned a century later during the Spanish conquest, though the citadel was never discovered by Spanish conquistadors.  
-            The site remained largely unknown to the outside world until American historian Hiram Bingham brought it international attention in 1911.  
-            Today, Machu Picchu is one of the most visited archaeological sites in the world and a symbol of Incan ingenuity.  
-            Read more about <a href="https://en.wikipedia.org/wiki/Inca_Empire" target="_blank">the Inca Empire</a>.
-        </p>
+  <!-- Exploring the Place -->
+  <section id="explore">
+  <h2>Exploring the Place</h2>
+  <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/cnMa-Sm9H4k?si=nJT9JYYn_MpHbHgb" title="Exploring Machu Picchu" allowfullscreen></iframe>
+  </div>
+  </section>
+
+  <!-- Location -->
+  <section id="location">
+    <h2>Location of the Place</h2>
+    <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.565743568055!2d-72.54496338460503!3d-13.16314119071538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dadc65fdb8e9f%3A0x2f4f651f8aebc497!2sMachu%20Picchu!5e0!3m2!1sen!2s!4v1698800000000!5m2!1sen!2s" 
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
     </div>
+  </section>
 
-        <!-- Timeline Section -->
-     <h2>Construction Timeline</h2>
+  <!-- Fun Fact Section -->
+  <section id="facts">
+    <h2>Fun Facts</h2>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Engineering</td>
+            <td>Machu Picchu was built without the use of mortar; stones fit together so precisely that even a knife cannot fit between them.</td>
+        </tr>
+        <tr>
+            <td>Hidden Past</td>
+            <td>The site remained hidden from the outside world for over 400 years.</td>
+        </tr>
+        <tr>
+            <td>High Altitude</td>
+            <td>Machu Picchu is located about 2,430 meters above sea level.</td>
+        </tr>
+    </table>
+  </section>
 
-<details open>
-  <summary><strong>c. 1450 – Construction Begins</strong></summary>
-  <p>
-    Machu Picchu was constructed during the reign of Emperor Pachacuti at the
-    height of the Inca Empire.
-  </p>
-</details>
+  <!-- Rating Section -->
+  <section id="feedback">
+    <h2>What Visitors Say</h2>
+    <p class="subtitle">Real experiences from travelers around the world</p>
 
-<details>
-  <summary><strong>15th Century – Active Use</strong></summary>
-  <p>
-    The citadel served as a royal retreat and religious site for the Incas.
-  </p>
-</details>
+    <div class="testimonials">
 
-<details>
-  <summary><strong>c. 1530 – Abandonment</strong></summary>
-  <p>
-    The site was abandoned during the Spanish conquest, though it was never
-    discovered by the Spanish.
-  </p>
-</details>
+        <div class="testimonial">
+            <p class="quote">"Absolutely breathtaking. The stonework is incredible, and the views from the mountains make the entire place feel unreal. Truly a once-in-a-lifetime experience."</p>
+            <h4>— Olivia M.</h4>
+            <span>⭐ ⭐ ⭐ ⭐ ⭐</span>
+        </div>
 
-<details>
-  <summary><strong>1911 – Rediscovery</strong></summary>
-  <p>
-    Machu Picchu gained global attention after being introduced to the world by
-    Hiram Bingham.
-  </p>
-</details>
+        <div class="testimonial">
+            <p class="quote">"Machu Picchu is magical. The combination of nature, architecture, and history creates an experience unlike anywhere else in the world."</p>
+            <h4>— Sofia R.</h4>
+            <span>⭐ ⭐ ⭐ ⭐ ⭐</span>
+        </div>
 
-<details>
-  <summary><strong>Modern Era – Preservation</strong></summary>
-  <p>
-    Conservation efforts protect the site from environmental damage and
-    over-tourism.
-  </p>
-</details>
+        <div class="testimonial">
+            <p class="quote">"Stunning location and rich history. The climb can be challenging, but the views and atmosphere at the top make it completely worth it."</p>
+            <h4>— Marcus T.</h4>
+            <span>⭐ ⭐ ⭐ ⭐</span>
+        </div>
+  </section>
 
-    <!-- Fun Fact Section -->
-     <h2>3 Fun Facts</h2>
-<ul>
-  <li>
-    Machu Picchu was built without the use of mortar; stones fit together so
-    precisely that even a knife cannot fit between them.
-  </li>
-  <li>
-    The site remained hidden from the outside world for over 400 years.
-  </li>
-  <li>
-    Machu Picchu is located about 2,430 meters above sea level.
-  </li>
-</ul>
-    
-    <!-- Rating Section -->
-     <h2>Visitor Rating</h2>
-<p>
-  ⭐⭐⭐⭐⭐ <strong>4.9 / 5</strong>
-</p>
-<p>
-  Visitors praise Machu Picchu for its breathtaking scenery, historical mystery,
-  and remarkable Inca engineering.
-</p>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Wonders of the World Website. All rights reserved.</p>
-        <p>Learn more on <a href="https://en.wikipedia.org/wiki/Machu_Picchu" target="_blank">Wikipedia</a>.</p>
-    </footer>
+  <!-- footer -->
+  <footer class="footer-machupicchu">
+    <p>&copy; 2026 Wonders of the World Project</p>
+  </footer>
+  <script src="js/navbar.js"></script>
+  <script src="js/7ww.js"></script>
 </body>
-
 </html>
