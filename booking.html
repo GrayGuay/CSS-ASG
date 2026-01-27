@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booking</title>
+  <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+
+<nav>
+  
+</nav>
+
+<h1>Book Your Trip NOW!</h1>
+<p class="tagline">"Explore the Wonders, Travel in Comfort"</p>
+
+<form id="bookingForm">
+
+  <!-- ================= Personal Information ================= -->
+  <h2>Personal Information</h2>
+
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" required>
+
+  <label for="passport">IC / Passport Number:</label>
+  <input type="text" id="passport" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" required>
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" required>
+
+  <!-- ================= Travel Selection ================= -->
+  <h2>Travel Details</h2>
+
+  <label for="wonder">Wonder You Want To Visit (Country)</label>
+  <select id="wonder" required>
+  <option value="" disabled selected>-- Select Destination --</option>
+  <option value="5000">Great Wall of China – China ($5,000)</option>
+  <option value="4800">Petra – Jordan ($4,800)</option>
+  <option value="5200">Machu Picchu – Peru ($5,200)</option>
+  <option value="4700">Chichén Itzá – Mexico ($4,700)</option>
+  <option value="4900">Christ the Redeemer – Brazil ($4,900)</option>
+  <option value="5100">Colosseum – Italy ($5,100)</option>
+  <option value="5300">Taj Mahal – India ($5,300)</option>
+</select>
+
+  <label for="flightTime">Flight Timing</label>
+  <select id="flightTime" required>
+  <option value="" disabled selected>-- Select Flight Time --</option>
+  <option value="morning">Morning (06:00 – 10:00)</option>
+  <option value="afternoon">Afternoon (12:00 – 16:00)</option>
+  <option value="evening">Evening (18:00 – 22:00)</option>
+  <option value="overnight">Overnight (23:00 – 05:00)</option>
+</select>
+
+  <label for="flightPackage">Flight Package</label>
+  <select id="flightPackage" required>
+  <option value="" disabled selected>-- Select Flight Package --</option>
+  <option value="1200">Basic Economy – 15kg baggage ($1,200)</option>
+  <option value="1500">Economy – 20kg baggage + meal ($1,500)</option>
+  <option value="2200">Premium Economy – Extra legroom ($2,200)</option>
+  <option value="3000">Business – Lounge + priority boarding ($3,000)</option>
+  <option value="4500">First Class – Luxury cabin ($4,500)</option>
+</select>
+
+  <!-- ================= Transport ================= -->
+  <label>
+  <input type="checkbox" id="transport">
+  Add Private Transport (<span id="transportRate">$0/day</span>)
+</label>
+
+<div id="transportOptions" class="hidden">
+  <label>Number of Days</label>
+  <div class="day-selector">
+    <button type="button" id="minusDay">−</button>
+    <span id="dayCount">1</span>
+    <button type="button" id="plusDay">+</button>
+  </div>
+</div>
+
+  <!-- ================= Checkout ================= -->
+  <h2>Checkout</h2>
+
+  <table class="price-table">
+    <tr>
+      <td>Destination Of The Country (Wonder)</td>
+      <td id="wonderPrice">$0</td>
+    </tr>
+    <tr>
+      <td>Flight Package</td>
+      <td id="flightPackagePrice">$0</td>
+    </tr>
+    <tr>
+      <td>Private Transport</td>
+      <td id="transportPrice">$0</td>
+    </tr>
+    <tr class="total-row">
+      <td>Total Payable Amount</td>
+      <td id="totalPrice">$0</td>
+    </tr>
+  </table>
+
+  <button type="submit" class="submit-btn">Confirm Booking</button>
+
+</form>
+
+<!-- Custom Summary Popup -->
+<div id="summaryModal" class="modal hidden">
+  <div class="modal-content">
+    <pre id="summaryText"></pre>
+    <button type="button" id="closeSummary" class="submit-btn">
+      Close
+    </button>
+  </div>
+</div>
+
+<script src="js/booking.js"></script>
+</body>
+</html>
