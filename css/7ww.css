@@ -33,6 +33,22 @@
     );
 }
 
+.body-greatwallofchina {
+    background: linear-gradient(
+        to bottom,
+        #e6ebef,
+        #cfd8dc
+    );
+}
+
+.body-christ {
+    background: linear-gradient(
+        to bottom,
+        #BFC6C4,
+        #F0F4F8
+    );
+}
+
 /* ================================
    HEADINGS
 ================================ */
@@ -68,6 +84,19 @@ header {
     background-image:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
     url("../images/chichen/chichen-header.jpg");
+}
+
+.header-greatwallofchina {
+    background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../images/great wall/site_0438_0035-1200-630-20251217144955.jpg");
+}
+
+.header-christ {
+    background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../images/christ/6XY2BQvQLh8Rtjop9TTPcQ.webp");
+    background-position: center top;
 }
 
 header h1 {
@@ -303,6 +332,16 @@ footer {
 .footer-chichen {
     color: #f2efe9;
     background: #8b5e3c;
+}
+
+.footer-greatwallofchina {
+    color: #f2efe9;
+    background: #9aa4aa;
+}
+
+.footer-christ {
+    color: white;
+    background: #1e1e1e;
 }
 
 /* ================================
