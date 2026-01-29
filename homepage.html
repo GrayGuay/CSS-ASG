@@ -176,6 +176,143 @@
     </div>
   </div>
 </section>
+
+<!-- CULTURAL SIGNIFICANCE -->
+<section id="culture">
+  <h2>Cultural Significance</h2>
+  <div class="grid">
+    <div class="card">
+      <img src = "/images/great wall/The_Great_Wall_of_China_at_Jinshanling-edit.jpg">
+      <div class="card-content"></div>
+        <h3>Great Wall of China</h3>
+        <p>Symbol of defense and perseverance in ancient China.</p>
+    </div>
+    <div class="card">
+      <img src = "/images/taj/taj.jpg">
+      <div class="card-content"></div>
+        <h3>Taj Mahal</h3>
+        <p>Represents eternal love and Mughal architectural brilliance.</p>
+    </div>
+    <div class="card">
+      <img src = "/images/petra/Petra Header.jpg">
+      <div class="card-content"></div>
+        <h3>Petra</h3>
+        <p>Showcases Nabataean ingenuity in carving cities from rock.</p>
+    </div>
+    <div class="card">
+      <img src = "/images/christ/statue-Christ-the-Redeemer-Rio-de-Janeiro.webp">
+      <div class="card-content"></div>
+        <h3>Christ the Redeemer</h3>
+        <p>Embodies peace, unity, and cultural pride in Brazil.</p>
+    </div>
+    <div class="card">
+      <img src = "/images/machu/Machu_Picchu,_2023_(012).jpg">
+      <div class="card-content"></div>
+        <h3>Machu Picchu</h3>
+        <p>A harmonious blend of architecture and nature.</p>
+    </div>
+    <div class="card">
+      <img src = "/images/colosseum/what-you-should-know-about-the-colosseum.jpg">
+      <div class="card-content"></div>
+        <h3>Colosseum</h3>
+        <p>Shows Roman engineering and public entertainment culture.</p>
+    </div>
+    <div class="card">
+      <img src = "/images/chichen/chichen-header.jpg">
+      <div class="card-content"></div>
+        <h3>Chichén Itzá</h3>
+        <p>Represents Mayan astronomy, rituals, and architectural genius.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- MAP SECTION -->
+<section id="world-map">
+  <h2>Wonders Around the World</h2>
+  <div class="map-container">
+    <img src="/images/world_map.jpg" alt="World Map" class="map-img">
+
+<!-- Pins -->
+    <div class="pin" style="top: 29%; left: 74%;" onclick="openModal('Great Wall of China')">
+      <span>📍</span>
+      <span class="pin-tooltip">Great Wall of China</span>
+    </div>
+
+    <div class="pin" style="top: 37%; left: 64%;" onclick="openModal('Taj Mahal')">
+      <span>📍</span>
+      <span class="pin-tooltip">Taj Mahal</span>
+    </div>
+
+    <div class="pin" style="top: 35%; left: 52%;" onclick="openModal('Petra')">
+      <span>📍</span>
+      <span class="pin-tooltip">Petra</span>
+    </div>
+
+    <div class="pin" style="top: 67%; left: 26%;" onclick="openModal('Christ the Redeemer')">
+      <span>📍</span>
+      <span class="pin-tooltip">Christ the Redeemer</span>
+    </div>
+
+    <div class="pin" style="top: 63%; left: 20%;" onclick="openModal('Machu Picchu')">
+      <span>📍</span>
+      <span class="pin-tooltip">Machu Picchu</span>
+    </div>
+
+    <div class="pin" style="top: 27%; left: 45.5%;" onclick="openModal('Colosseum')">
+      <span>📍</span>
+      <span class="pin-tooltip">Colosseum</span>
+    </div>
+
+    <div class="pin" style="top: 40%; left: 14%;" onclick="openModal('Chichén Itzá')">
+      <span>📍</span>
+      <span class="pin-tooltip">Chichén Itzá</span>
+    </div>
+  </div>
+</section>
+
+<!-- THEN VS NOW -->
+<section id="then-now">
+  <h2>Then vs Now</h2>
+  <div class="then-now-grid">
+    <div class="then-now-card">
+      <h3>Great Wall of China</h3>
+      <div class="image-slider">
+        <div class="slider-img-container">
+          <img src="/images/great wall/old-greatwall.jpg" alt="Old Great Wall">
+        </div>
+        <div class="slider-img-container">
+          <img src="/images/great wall/The_Great_Wall_of_China_at_Jinshanling-edit.jpg" alt="Modern Great Wall">
+        </div>
+      </div>
+    </div>
+
+    <div class="then-now-card">
+      <h3>Colosseum</h3>
+      <div class="image-slider">
+        <div class="slider-img-container">
+          <img src="/images/colosseum/old-colosseum.avif" alt="Old Colosseum">
+        </div>
+        <div class="slider-img-container">
+          <img src="/images/colosseum/Interior-Colosseum-Rome.webp" alt="Modern Colosseum">
+        </div>
+      </div>
+    </div>
+
+    <div class="then-now-card">
+      <h3>Taj Mahal</h3>
+      <div class="image-slider">
+        <div class="slider-img-container">
+          <img src="/images/taj/old-tahj.jpg" alt="Old Taj Mahal">
+        </div>
+        <div class="slider-img-container">
+          <img src="/images/taj/taj.jpg" alt="Modern Taj Mahal">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!--Fun-facst-->
 <section id="fun-facts">
   <h2>Did You Know?</h2>
@@ -206,10 +343,7 @@
 <div class="modal" id="modal">
   <div class="modal-content">
     <h3 id="modalTitle"></h3>
-    <p>
-      This wonder represents extraordinary human creativity,
-      engineering excellence, and cultural significance.
-    </p>
+    <p id="modalDescription"></p>
     <button class="close-btn" onclick="closeModal()">Close</button>
   </div>
 </div>
@@ -219,6 +353,6 @@
 </footer>
 
 <!-- JS -->
-<script src="/js/homepage.js"></script>
+<script src="js/homepage.js"></script>
 </body>
 </html>
