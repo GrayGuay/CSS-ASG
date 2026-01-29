@@ -1,0 +1,347 @@
+/* ================================
+   RESET & BASE
+================================ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: lightblue;
+    color: #222;
+}
+
+/* ================================
+   GLOBAL VARIABLES
+================================ */
+:root {
+    --primary: #8b0000;
+    --secondary: #d6b26b;
+    --accent: #d6b26b;
+}
+
+/* ================================
+   UTILITIES
+================================ */
+.hidden {
+    display: none !important;
+}
+
+.subtitle {
+    color: #666;
+}
+
+/* ================================
+   HEADINGS
+================================ */
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+}
+
+/* ================================
+   HEADER
+================================ */
+header {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(6px);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 25px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    background: var(--accent);
+    color: black;
+}
+
+.planner-btn {
+    background: black;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+/* ================================
+   MAIN LAYOUT
+================================ */
+.container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* ================================
+   STEPPER
+================================ */
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 25px;
+    margin: 30px auto;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: white;
+    width: fit-content;
+}
+
+.step {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step.active {
+    background: black;
+    color: white;
+}
+
+.line {
+    width: 40px;
+    height: 2px;
+    background: #ccc;
+}
+
+.line.active {
+    background: black;
+}
+
+/* ================================
+   CARDS & FORMS
+================================ */
+.card {
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.card input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+.hint {
+    color: #777;
+    margin-top: 10px;
+}
+
+/* ================================
+   INTEREST SELECTION
+================================ */
+.interest-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    border: 1.5px solid #dee2e6;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.interest-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: green;
+}
+
+/* ================================
+   LOCATION / STEP 4
+================================ */
+.location-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 12px;
+    background: #fff5f5;
+    border: 1px solid #fed7d7;
+}
+
+/* ================================
+   SEARCH
+================================ */
+.search-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.search-results-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 0 0 8px 8px;
+    display: none;
+    z-index: 100;
+}
+
+.search-results-list.active {
+    display: block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hotel-item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.hotel-item:hover {
+    background: #fff5f5;
+    color: grey;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+.next-btn,
+.prev-btn {
+    position: fixed;
+    bottom: 100px;
+    border: none;
+    background: #f5f5f5;
+    font-size: 22px;
+    border-radius: 50%;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.next-btn { right: 100px; }
+.prev-btn { left: 100px; }
+
+.finish-btn {
+    margin-top: 20px;
+    margin-left: 1000px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    background: grey;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.finish-btn:hover {
+    background: black;
+    transform: translateY(-2px);
+}
+
+.finish-btn:active {
+    transform: translateY(0);
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer.footer-itinerary {
+    text-align: center;
+    padding: 20px;
+    margin-top: 120px;
+    background: black;
+    color: white;
+}
+
+/* ================================
+   ANIMATIONS
+================================ */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
