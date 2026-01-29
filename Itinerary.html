@@ -1,11 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Itinerary</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Singapore Trip Planner</title>
+  <link rel="stylesheet" href="css/itinerary.css" />
 </head>
+
 <body class="body-itinerary">
-    
+  <div id="navbar-pages-placeholder"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header-itinerary">
+    <h1>7 Wonders Of The World Trip Planner</h1>
+    <p>Create your perfect itinerary in 4 simple steps</p>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main class="main-content">
+
+    <!-- Step Indicator -->
+    <div class="steps-container">
+      <div class="steps">
+        <div class="step active">1</div>
+        <div class="line"></div>
+        <div class="step">2</div>
+        <div class="line"></div>
+        <div class="step">3</div>
+        <div class="line"></div>
+        <div class="step">4</div>
+      </div>
+    </div>
+
+    <!-- ================= STEP 1 ================= -->
+    <div id="step-1" class="step-container">
+      <div class="card">
+        <h2>Trip Duration</h2>
+        <p>How many days will you spend there?</p>
+
+        <label>
+          Number of Days *
+          <input type="number" id="days" min="1" max="60" value="1" />
+        </label>
+
+        <small>Minimum: 1 day, Maximum: 60 days</small>
+        <p class="hint">We recommend 3 to 7 days for a comprehensive experience</p>
+      </div>
+
+      <div class="btn-group single-btn">
+        <button class="next-btn" onclick="goToStep(2)">➜</button>
+      </div>
+    </div>
+
+    <!-- ================= STEP 2 ================= -->
+    <div id="step-2" class="step-container hidden">
+      <div class="card">
+        <h2>Total Budget</h2>
+        <p>What is your total budget for your trip?</p>
+
+        <label>
+          Total Trip Budget (SGD) *
+          <div class="input-with-prefix">
+            <span>S$</span>
+            <input type="number" id="total-budget" value="50.00" />
+          </div>
+        </label>
+
+        <div id="budget-result-box" class="result-box"></div>
+      </div>
+
+      <div class="btn-group">
+        <button class="prev-btn" onclick="goToStep(1)">⬅</button>
+        <button class="next-btn" onclick="goToStep(3)">➜</button>
+      </div>
+    </div>
+
+    <!-- ================= STEP 3 ================= -->
+    <div id="step-3" class="step-container hidden">
+      <div class="card">
+        <h2>Travel Interests</h2>
+        <p>What would you want to see in your trip?</p>
+
+        <div class="interests-grid">
+          <label class="interest-item">
+            <span>Animals / Zoo / Wildlife</span>
+            <input type="checkbox" name="interest" />
+            <span class="custom-checkbox"></span>
+          </label>
+
+          <label class="interest-item">
+            <span>Museums & Art Galleries</span>
+            <input type="checkbox" name="interest" />
+            <span class="custom-checkbox"></span>
+          </label>
+
+          <label class="interest-item">
+            <span>Nature & Parks</span>
+            <input type="checkbox" name="interest" />
+            <span class="custom-checkbox"></span>
+          </label>
+
+          <label class="interest-item">
+            <span>Beaches</span>
+            <input type="checkbox" name="interest" />
+            <span class="custom-checkbox"></span>
+          </label>
+
+          <label class="interest-item">
+            <span>Fine Dining</span>
+            <input type="checkbox" name="interest" />
+            <span class="custom-checkbox"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button class="prev-btn" onclick="goToStep(2)">⬅</button>
+        <button class="next-btn" onclick="goToStep(4)">➜</button>
+      </div>
+    </div>
+
+    <!-- ================= STEP 4 ================= -->
+    <div id="step-4" class="step-container hidden">
+      <div class="card">
+        <h2>Accommodation</h2>
+
+        <div class="separator">
+          <span>Select a Hotel</span>
+        </div>
+
+        <div class="search-wrapper">
+          <input
+            type="text"
+            id="hotel-search"
+            placeholder="Search hotels..."
+            oninput="filterHotels()"
+          />
+
+          <div id="search-results" class="search-results-list"></div>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button class="prev-btn" onclick="goToStep(3)">⬅</button>
+        <button class="finish-btn" onclick="alert('Trip Saved!')">Finish</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer-itinerary">
+    <p>&copy; 2026 Wonders of the World Project</p>
+  </footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="js/navbar.js"></script>
+  <script src="js/itinerary.js"></script>
 </body>
 </html>
