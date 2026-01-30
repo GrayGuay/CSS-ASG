@@ -315,12 +315,18 @@ header p {
 }
 
 /* ================================
+    Space
+================================ */
+.space {
+    padding: 20vh;
+}
+
+/* ================================
    FOOTER
 ================================ */
 footer.footer-itinerary {
     text-align: center;
     padding: 20px;
-    margin-top: 120px;
     background: black;
     color: white;
 }
@@ -344,4 +350,5 @@ footer.footer-itinerary {
     header h1 {
         font-size: 2.5rem;
     }
+
 }
