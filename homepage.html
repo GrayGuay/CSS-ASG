@@ -40,7 +40,15 @@
   </ul>
 </nav>
 
-<!-- HERO -->
+<!-- HERO 
+  - Introduces the 7 Wonders website with title, tagline, and CTA buttons
+    Features:
+    - Primary button to jump to wonders section
+    - Outline button for quick facts
+    - Booking CTA button linking to booking page
+    Implementation:
+    - Hero buttons wrapped in .hero-btns div for layout
+    - Booking button uses emoji and gradient styling-->
 <header id="home">
   <div>
     <h1>7 Wonders of the World</h1>
@@ -51,17 +59,36 @@
     <div class="hero-btns">
       <a href="#wonders" class="btn-primary">Explore Wonders</a>
       <a href="#facts" class="btn-outline">Quick Facts</a>
-      <!-- BOOKING CTA BUTTON -->
+      <!-- 
+        BOOKING CTA BUTTON
+        Purpose:
+        - Directs users to the booking page without opening a new tab
+        - Designed to be visually appealing with gradient and emoji
+        - Placed alongside other hero buttons for easy access
+        Implementation:
+        - Wrapped in a div (.booking-cta) for layout control
+        - <a> tag links to booking.html and styled as .booking-btn
+      -->
         <div class="booking-cta">
           <a href="booking.html" class="booking-btn">
             ✈️ Book Your World Tour
           </a>
         </div>
+        <a href="itinerary.html" class="itinerary-btn">
+      🗺️ View Itinerary
+        </a>
     </div>
   </div>
 </header>
 
-<!-- WONDERS -->
+<!-- WONDERS
+ - Displays cards for each of the 7 Wonders
+  Features:
+  - Image, title, description, and internal link for each wonder
+  - Clickable cards open a modal with more info
+  Implementation:
+  - Each card has .card class and onclick event
+  - Links stop propagation so modal doesn't trigger -->
 <section id="wonders">
   <h2>The Seven Wonders</h2>
 
@@ -201,7 +228,13 @@
   </div>
 </section>
 
-<!-- CULTURAL SIGNIFICANCE -->
+<!-- CULTURAL SIGNIFICANCE 
+ Purpose:
+  - Highlights the cultural and historical importance of each wonder
+  Features:
+  - Image + short description per wonder
+  Implementation:
+  - Grid layout with cards-->
 <section id="culture">
   <h2>Cultural Significance</h2>
   <div class="grid">
@@ -300,7 +333,13 @@
   </div>
 </section>
 
-<!-- THEN VS NOW -->
+<!-- THEN VS NOW 
+ Purpose:
+  - Show compare images of how wonders looked historically vs now
+  Features:
+  - Image slider for each wonder
+  Implementation:
+  - .image-slider container with multiple images-->
 <section id="then-now">
   <h2>Then vs Now</h2>
   <div class="then-now-grid">
@@ -342,7 +381,14 @@
   </div>
 </section>
 
-<!--Fun-facst-->
+<!--Fun-facst
+Purpose:
+  - Display interesting trivia in a carousel format
+  Features:
+  - Next/previous buttons
+  - Icons with each fact
+  Implementation:
+  - .carousel-track contains .carousel-item elements-->
 <section id="fun-facts">
   <h2>Did You Know?</h2>
 
@@ -379,7 +425,12 @@
   </div>
 </section>
 
-<!-- MODAL -->
+<!-- MODAL 
+ Purpose:
+  - Popup window to display additional information for each wonder
+  Implementation:
+  - Hidden by default, toggled via JS
+  - Includes title, description, and close button-->
 <div class="modal" id="modal">
   <div class="modal-content">
     <h3 id="modalTitle"></h3>

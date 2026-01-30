@@ -470,3 +470,19 @@ footer {
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
   background: linear-gradient(135deg, #ff6a3c, #ffb97b);
 }
+
+/* Itinerary Button Style */
+.itinerary-btn {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: white;
+  padding: 0.8rem 1.6rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.itinerary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
