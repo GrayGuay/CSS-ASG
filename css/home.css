@@ -445,3 +445,28 @@ footer {
   transition: transform 0.3s;
   border-radius: 0 0 20px 20px;
 }
+
+/* Booking CTA Button */
+.booking-cta {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.booking-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.booking-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #ff6a3c, #ffb97b);
+}
