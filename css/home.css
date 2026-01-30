@@ -340,6 +340,14 @@ footer {
   padding: 20px;
 }
 /* MAP SECTION */
+
+.map-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
 #world-map {
   text-align: center;
   padding: 80px 20px;
@@ -361,12 +369,33 @@ footer {
   border-radius: 20px;
 }
 
+
+/* Pins */
 .pin {
   position: absolute;
   cursor: pointer;
   transform: translate(-50%, -50%);
   font-size: 1.8rem;
   transition: transform 0.3s;
+
+  position: absolute;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.pin span:first-child {
+  font-size: 26px;
+  animation: pulse 1.8s infinite;
+}
+
+.red span:first-child { color: #e63946; }
+.blue span:first-child { color: #457b9d; }
+.green span:first-child { color: #2a9d8f; }
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 1; }
 }
 
 .pin:hover {
@@ -375,21 +404,25 @@ footer {
 
 /* Tooltip */
 .pin-tooltip {
-  display: none;
   position: absolute;
-  top: -30px;
+  bottom: 35px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.75);
   color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 14px;
   white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
 }
 
 .pin:hover .pin-tooltip {
-  display: block;
+  opacity: 1;
+  transform: translate(-50%, -10px);
 }
 
 /* THEN VS NOW */
