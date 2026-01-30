@@ -45,12 +45,32 @@ nav a:hover {
   color: #38bdf8;
 }
 
+.wonders-intro {
+  text-align: center;
+  font-size: 1.2rem;  
+  font-weight: 500;        
+  color: wheat;     
+  margin-bottom: 2rem;     
+  line-height: 1.6;          
+  max-width: 700px;           
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;             
+}
+
+/* subtle entrance animation */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
 /* HERO */
 header {
   height: 100vh;
   background:
     linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee")
+    url("/images/homepage/home_header.jpg")
     center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -345,7 +365,7 @@ footer {
   text-align: center;
   font-size: 1.1rem;
   margin-bottom: 20px;
-  color: whitesmoke;
+  color: wheat;
 }
 
 #world-map {
