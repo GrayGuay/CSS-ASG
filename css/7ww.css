@@ -105,7 +105,7 @@ header {
 .header-colosseum {
     background-image:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("../images/colosseum/colosseum-header.webp");
+    url("/images/colosseum/header.avif");
 }
 
 .header-chichen {
@@ -117,7 +117,7 @@ header {
 .header-greatwallofchina {
     background-image:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("../images/great wall/site_0438_0035-1200-630-20251217144955.jpg");
+    url("../images/great wall/great-wall-unesco-china.avif");
 }
 
 .header-christ {
@@ -136,7 +136,7 @@ header {
 .header-petra {
     background-image:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("../images/petra/Petra\ Header.jpg");
+    url("/images/petra/petra.avif");
 }
 
 .header-tajmahal {
