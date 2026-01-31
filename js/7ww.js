@@ -3,17 +3,38 @@ let current = 0;
 
 slides[current].classList.add('active');
 
-document.querySelector('.next').onclick = () => {
-  slides[current].classList.remove('active');
+const showSlide = (index) => {
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[index].classList.add('active');
+};
+
+// Auto-slide every 5 seconds
+let autoSlide = setInterval(() => {
   current = (current + 1) % slides.length;
-  slides[current].classList.add('active');
+  showSlide(current);
+}, 5000);
+
+// Manual navigation
+document.querySelector('.next').onclick = () => {
+  current = (current + 1) % slides.length;
+  showSlide(current);
+  resetInterval();
 };
 
 document.querySelector('.prev').onclick = () => {
-  slides[current].classList.remove('active');
   current = (current - 1 + slides.length) % slides.length;
-  slides[current].classList.add('active');
+  showSlide(current);
+  resetInterval();
 };
+
+// Reset auto-slide interval when manually clicking
+function resetInterval() {
+  clearInterval(autoSlide);
+  autoSlide = setInterval(() => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }, 5000);
+}
 
 
 
@@ -56,3 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   items.forEach(item => observer.observe(item));
 });
+
+
+
+
