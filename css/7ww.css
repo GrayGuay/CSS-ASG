@@ -203,6 +203,8 @@ header p {
     color: black;
 }
 
+
+
 /* ================================
    SECTIONS
 ================================ */
@@ -475,8 +477,8 @@ footer {
 }
 
 .fact-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .fact-card h3 {
