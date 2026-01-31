@@ -14,7 +14,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 .body-colosseum {
@@ -97,6 +100,8 @@ header {
     background-repeat: no-repeat;
 }
 
+
+
 .header-colosseum {
     background-image:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
@@ -155,9 +160,16 @@ header p {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(0,0,0,0.85);
-    backdrop-filter: blur(6px);
+
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
+
+
 
 .nav-container {
     max-width: 1200px;
@@ -305,6 +317,7 @@ section h2::after {
     border-radius: 50%;
     border: 2px solid var(--primary);
 }
+
 
 .year {
     font-weight: bold;

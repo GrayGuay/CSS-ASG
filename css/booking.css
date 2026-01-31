@@ -5,8 +5,13 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(0,0,0,0.85);
-    backdrop-filter: blur(6px);
+
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .nav-container {
@@ -39,8 +44,8 @@
 .nav-links a:hover {
     background: var(--accent);
     color: black;
+    transform: translateY(-2px);
 }
-
 body {
   background: linear-gradient(to bottom, #f5efe6, #e6dccb);
   font-family: Arial, sans-serif;
